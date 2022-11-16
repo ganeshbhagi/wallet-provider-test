@@ -60,7 +60,7 @@ export function getExtensions(): Observable<InstallableExtension[]> {
     return of([]);
   }
 
-  return fromFetch('https://github.com/ganeshbhagi/wallet-provider-test/blob/main/assets.json').pipe<
+  return fromFetch('https://raw.githubusercontent.com/ganeshbhagi/wallet-provider-test/main/assets.json').pipe<
     Extensions,
     Extensions,
     InstallableExtension[]
